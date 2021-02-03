@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    height: 600px;
+
+    /* Apenas Display flex> Default:horizontal */
+    display: flex;
+
+    /* Eixo Principal <DEFAULT: row> */
+    /* Sentido */
+    flex-direction: row; /* flex-direction: row-reverse; */
+    
+    /* Eixo Principal <DEFAULT: row> */
+    /* Sentido + Direcao */
+    /* flex-direction: column;  */    /* flex-direction: column-reverse; */
+
+    /* Deixa Tudo Junto no centro>tem que ter margin pra separar */
+    justify-content: center;
+
+    /* Deixa espaço distriuido entre itens: sem espaço do lado */
+    /* justify-content: space-between; */
+
+    /* Deixa espaço distriuido entre itens: COM espaço do lado
+    /* Lado;X meio 2X */
+    /*justify-content: space-between; */
+
+    /* Deixa espaço distriuido entre itens: COM espaço do lado
+    /* Lado;X meio X */
+    /* justify-content: space-evenly; */
+
+    /* justify-content: flex-end; */
+    
+    /* >>>>>>>DEFAULT DO FLEX */
+    /* justify-content: flex-start; */
+
+
+    /* ======================== */
+    /* Default: stretch */
+    /* align-items: stretch; */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    /* Neste Caso: peba como ref a base do Text!! */
+    /* align-items: baseline; */
+
+    /* Pula pra linha de baixo!!!! */
+    flex-wrap: wrap;
+
+    /* justify-content:>>>>ajusta na direção do eixo principal*/
+    /* align-items: ajusta altura do elemento ao longo do cross axis */
+    /* align-content: ajusta a POSICAO dos elementos ao longo do CROSS AXIS */
+
+    /* stretch = default > nao da Strech nos itens mas sim nas Rows ( se elemento for height 100% ai sim ele vai junto*/
+    align-content: stretch;
+
+    align-content: space-around;
+}
+
+.item{
+    background-color: #f1425d;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.i2{
+    height: 10px;
+}
+
+
+.i4{
+    /* height: 70px; */
+    /* align-self: flex-end; */
+    /* align-self: flex-start; */
+    align-self: stretch;
+    /* DEFAULT PARA TODOS OS VALORES = 0 */
+    order: 1;
+}
